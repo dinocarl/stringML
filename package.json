@@ -1,0 +1,30 @@
+{
+  "name": "stringML",
+  "version": "0.1.0",
+  "description": "An HTML templating library that turn Javascript functions into HTML strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape tests/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dinocarl/stringML.git"
+  },
+  "keywords": [
+    "HTML",
+    "templates",
+    "Javascript",
+    "functions",
+    "string",
+    "output"
+  ],
+  "author": "dinocarl <site@dinocarl.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dinocarl/stringML/issues"
+  },
+  "homepage": "https://github.com/dinocarl/stringML",
+  "dependencies": {
+    "get-type": "^1.1.0"
+  }
+}
