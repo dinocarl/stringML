@@ -4,7 +4,7 @@
   "description": "An HTML templating library that turn Javascript functions into HTML strings",
   "main": "index.js",
   "scripts": {
-    "test": "tape tests/**/*.js"
+    "test": "node tests/*"
   },
   "repository": {
     "type": "git",
