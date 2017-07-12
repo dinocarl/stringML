@@ -23,8 +23,5 @@
   "bugs": {
     "url": "https://github.com/dinocarl/stringML/issues"
   },
-  "homepage": "https://github.com/dinocarl/stringML",
-  "dependencies": {
-    "get-type": "^1.1.0"
-  }
+  "homepage": "https://github.com/dinocarl/stringML"
 }
