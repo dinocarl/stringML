@@ -1,5 +1,5 @@
 var test = require('tape');
-var StringML = require('../index'); 
+var StringML = require('../index');
 
 var div = StringML.div;
 var header = StringML.header;
@@ -15,47 +15,53 @@ var closedTagNames = Object.keys(StringML)
   })
 ;
 
-closedTagNames.forEach(function (tag) {
-  test('Simple test for ' + tag + ' tag', function (assert) {
-    var testCase = StringML[tag]('test');
-    var expected = [tag, {}, 'test', []];
-    assert.deepEqual(testCase, expected);
-    assert.end();
-  });
-});
-
-StringML.selfClosingTagNames.forEach(function (tag) {
-  test('Simple test for ' + tag + ' tag', function (assert) {
-    var testCase = StringML[tag]({id: 'someID', class: 'some-class'});
-    var expected = [tag, {id: 'someID', class: 'some-class'}, '', []];
-    assert.deepEqual(testCase, expected);
-    assert.end();
-  });
-});
-
-test('Simple test for comment', function (assert) {  
-  var testCase = StringML.comment('text inside a comment');
-  var expected = ['!--', {}, 'text inside a comment', []];
-  assert.deepEqual(testCase, expected);
-  assert.end();
-});
-
-test('Nested Tags', function (assert) {
-  var testCase1 =
-    div(
-      span('test')
-    );
-  var expected1 = ['div', {}, '', [['span', {}, 'test', []]]];
-  var testCase2 =
-    div(
-      header(
-        h1(
-          span('test')
+// assemble the test data
+var testData = [].concat(
+  closedTagNames.map(function (tag) {
+    return {
+      title: 'Simple test for ' + tag,
+      result: StringML[tag]('test'),
+      expect: [tag, {}, 'test', []]
+    }
+  }),
+  StringML.selfClosingTagNames.map(function (tag) {
+    return {
+      title: 'Simple test for ' + tag,
+      result: StringML[tag]({id: 'someID', class: 'some-class'}),
+      expect: [tag, {id: 'someID', class: 'some-class'}, '', []]
+    };
+  }),
+  {
+    title: 'Simple test for comment',
+    result:  StringML.comment('text inside a comment'),
+    expect: ['!--', {}, 'text inside a comment', []]
+  },
+  {
+    title: 'Simple Nested Case',
+    result:
+      div(
+        span('test')
+      ),
+    expect: ['div', {}, '', [['span', {}, 'test', []]]]
+  },
+  {
+    title: 'Deeply Nested Case',
+    result:
+      div(
+        header(
+          h1(
+            span('test')
+          )
         )
-      )
-    );
-  var expected2 = ['div', {}, '', [['header', {}, '', [['h1', {}, '', [['span', {}, 'test', []]]]]]]];
-  assert.deepEqual(testCase1, expected1);
-  assert.deepEqual(testCase2, expected2);
-  assert.end();
-});
+      ),
+    expect: ['div', {}, '', [['header', {}, '', [['h1', {}, '', [['span', {}, 'test', []]]]]]]]
+  }
+);
+
+// run the tests
+test('Tags Tests', function (assert) {
+  assert.plan(testData.length);
+  testData.forEach(function (testCase) {
+    assert.deepEqual(testCase.result, testCase.expect, testCase.title);
+  });
+})
