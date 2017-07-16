@@ -22,517 +22,517 @@ function h(tagName){
 
 function a() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['a'].concat(args));
+  return h.apply(null, ['a'].concat(args));
 }
 
 function abbr() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['abbr'].concat(args));
+  return h.apply(null, ['abbr'].concat(args));
 }
 
 function address() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['address'].concat(args));
+  return h.apply(null, ['address'].concat(args));
 }
 
 function area() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['area'].concat(args));
+  return h.apply(null, ['area'].concat(args));
 }
 
 function article() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['article'].concat(args));
+  return h.apply(null, ['article'].concat(args));
 }
 
 function aside() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['aside'].concat(args));
+  return h.apply(null, ['aside'].concat(args));
 }
 
 function audio() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['audio'].concat(args));
+  return h.apply(null, ['audio'].concat(args));
 }
 
 function b() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['b'].concat(args));
+  return h.apply(null, ['b'].concat(args));
 }
 
 function base() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['base'].concat(args));
+  return h.apply(null, ['base'].concat(args));
 }
 
 function bdi() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['bdi'].concat(args));
+  return h.apply(null, ['bdi'].concat(args));
 }
 
 function bdo() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['bdo'].concat(args));
+  return h.apply(null, ['bdo'].concat(args));
 }
 
 function blockquote() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['blockquote'].concat(args));
+  return h.apply(null, ['blockquote'].concat(args));
 }
 
 function body() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['body'].concat(args));
+  return h.apply(null, ['body'].concat(args));
 }
 
 function br() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['br'].concat(args));
+  return h.apply(null, ['br'].concat(args));
 }
 
 function button() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['button'].concat(args));
+  return h.apply(null, ['button'].concat(args));
 }
 
 function canvas() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['canvas'].concat(args));
+  return h.apply(null, ['canvas'].concat(args));
 }
 
 function caption() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['caption'].concat(args));
+  return h.apply(null, ['caption'].concat(args));
 }
 
 function cite() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['cite'].concat(args));
+  return h.apply(null, ['cite'].concat(args));
 }
 
 function code() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['code'].concat(args));
+  return h.apply(null, ['code'].concat(args));
 }
 
 function col() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['col'].concat(args));
+  return h.apply(null, ['col'].concat(args));
 }
 
 function colgroup() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['colgroup'].concat(args));
+  return h.apply(null, ['colgroup'].concat(args));
 }
 
 function dd() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['dd'].concat(args));
+  return h.apply(null, ['dd'].concat(args));
 }
 
 function del() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['del'].concat(args));
+  return h.apply(null, ['del'].concat(args));
 }
 
 function dfn() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['dfn'].concat(args));
+  return h.apply(null, ['dfn'].concat(args));
 }
 
 function dir() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['dir'].concat(args));
+  return h.apply(null, ['dir'].concat(args));
 }
 
 function div() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['div'].concat(args));
+  return h.apply(null, ['div'].concat(args));
 }
 
 function dl() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['dl'].concat(args));
+  return h.apply(null, ['dl'].concat(args));
 }
 
 function dt() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['dt'].concat(args));
+  return h.apply(null, ['dt'].concat(args));
 }
 
 function em() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['em'].concat(args));
+  return h.apply(null, ['em'].concat(args));
 }
 
 function embed() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['embed'].concat(args));
+  return h.apply(null, ['embed'].concat(args));
 }
 
 function fieldset() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['fieldset'].concat(args));
+  return h.apply(null, ['fieldset'].concat(args));
 }
 
 function figcaption() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['figcaption'].concat(args));
+  return h.apply(null, ['figcaption'].concat(args));
 }
 
 function figure() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['figure'].concat(args));
+  return h.apply(null, ['figure'].concat(args));
 }
 
 function footer() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['footer'].concat(args));
+  return h.apply(null, ['footer'].concat(args));
 }
 
 function form() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['form'].concat(args));
+  return h.apply(null, ['form'].concat(args));
 }
 
 function h1() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['h1'].concat(args));
+  return h.apply(null, ['h1'].concat(args));
 }
 
 function h2() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['h2'].concat(args));
+  return h.apply(null, ['h2'].concat(args));
 }
 
 function h3() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['h3'].concat(args));
+  return h.apply(null, ['h3'].concat(args));
 }
 
 function h4() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['h4'].concat(args));
+  return h.apply(null, ['h4'].concat(args));
 }
 
 function h5() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['h5'].concat(args));
+  return h.apply(null, ['h5'].concat(args));
 }
 
 function h6() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['h6'].concat(args));
+  return h.apply(null, ['h6'].concat(args));
 }
 
 function head() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['head'].concat(args));
+  return h.apply(null, ['head'].concat(args));
 }
 
 function header() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['header'].concat(args));
+  return h.apply(null, ['header'].concat(args));
 }
 
 function hgroup() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['hgroup'].concat(args));
+  return h.apply(null, ['hgroup'].concat(args));
 }
 
 function hr() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['hr'].concat(args));
+  return h.apply(null, ['hr'].concat(args));
 }
 
 function html() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['html'].concat(args));
+  return h.apply(null, ['html'].concat(args));
 }
 
 function i() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['i'].concat(args));
+  return h.apply(null, ['i'].concat(args));
 }
 
 function iframe() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['iframe'].concat(args));
+  return h.apply(null, ['iframe'].concat(args));
 }
 
 function img() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['img'].concat(args));
+  return h.apply(null, ['img'].concat(args));
 }
 
 function input() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['input'].concat(args));
+  return h.apply(null, ['input'].concat(args));
 }
 
 function ins() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['ins'].concat(args));
+  return h.apply(null, ['ins'].concat(args));
 }
 
 function kbd() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['kbd'].concat(args));
+  return h.apply(null, ['kbd'].concat(args));
 }
 
 function keygen() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['keygen'].concat(args));
+  return h.apply(null, ['keygen'].concat(args));
 }
 
 function label() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['label'].concat(args));
+  return h.apply(null, ['label'].concat(args));
 }
 
 function legend() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['legend'].concat(args));
+  return h.apply(null, ['legend'].concat(args));
 }
 
 function li() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['li'].concat(args));
+  return h.apply(null, ['li'].concat(args));
 }
 
 function link() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['link'].concat(args));
+  return h.apply(null, ['link'].concat(args));
 }
 
 function main() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['main'].concat(args));
+  return h.apply(null, ['main'].concat(args));
 }
 
 function map() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['map'].concat(args));
+  return h.apply(null, ['map'].concat(args));
 }
 
 function mark() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['mark'].concat(args));
+  return h.apply(null, ['mark'].concat(args));
 }
 
 function menu() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['menu'].concat(args));
+  return h.apply(null, ['menu'].concat(args));
 }
 
 function meta() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['meta'].concat(args));
+  return h.apply(null, ['meta'].concat(args));
 }
 
 function nav() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['nav'].concat(args));
+  return h.apply(null, ['nav'].concat(args));
 }
 
 function noscript() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['noscript'].concat(args));
+  return h.apply(null, ['noscript'].concat(args));
 }
 
 function object() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['object'].concat(args));
+  return h.apply(null, ['object'].concat(args));
 }
 
 function ol() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['ol'].concat(args));
+  return h.apply(null, ['ol'].concat(args));
 }
 
 function optgroup() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['optgroup'].concat(args));
+  return h.apply(null, ['optgroup'].concat(args));
 }
 
 function option() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['option'].concat(args));
+  return h.apply(null, ['option'].concat(args));
 }
 
 function p() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['p'].concat(args));
+  return h.apply(null, ['p'].concat(args));
 }
 
 function param() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['param'].concat(args));
+  return h.apply(null, ['param'].concat(args));
 }
 
 function pre() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['pre'].concat(args));
+  return h.apply(null, ['pre'].concat(args));
 }
 
 function progress() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['progress'].concat(args));
+  return h.apply(null, ['progress'].concat(args));
 }
 
 function q() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['q'].concat(args));
+  return h.apply(null, ['q'].concat(args));
 }
 
 function rp() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['rp'].concat(args));
+  return h.apply(null, ['rp'].concat(args));
 }
 
 function rt() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['rt'].concat(args));
+  return h.apply(null, ['rt'].concat(args));
 }
 
 function ruby() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['ruby'].concat(args));
+  return h.apply(null, ['ruby'].concat(args));
 }
 
 function s() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['s'].concat(args));
+  return h.apply(null, ['s'].concat(args));
 }
 
 function samp() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['samp'].concat(args));
+  return h.apply(null, ['samp'].concat(args));
 }
 
 function script() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['script'].concat(args));
+  return h.apply(null, ['script'].concat(args));
 }
 
 function section() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['section'].concat(args));
+  return h.apply(null, ['section'].concat(args));
 }
 
 function select() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['select'].concat(args));
+  return h.apply(null, ['select'].concat(args));
 }
 
 function small() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['small'].concat(args));
+  return h.apply(null, ['small'].concat(args));
 }
 
 function source() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['source'].concat(args));
+  return h.apply(null, ['source'].concat(args));
 }
 
 function span() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['span'].concat(args));
+  return h.apply(null, ['span'].concat(args));
 }
 
 function strong() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['strong'].concat(args));
+  return h.apply(null, ['strong'].concat(args));
 }
 
 function style() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['style'].concat(args));
+  return h.apply(null, ['style'].concat(args));
 }
 
 function sub() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['sub'].concat(args));
+  return h.apply(null, ['sub'].concat(args));
 }
 
 function sup() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['sup'].concat(args));
+  return h.apply(null, ['sup'].concat(args));
 }
 
 function table() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['table'].concat(args));
+  return h.apply(null, ['table'].concat(args));
 }
 
 function tbody() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['tbody'].concat(args));
+  return h.apply(null, ['tbody'].concat(args));
 }
 
 function td() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['td'].concat(args));
+  return h.apply(null, ['td'].concat(args));
 }
 
 function textarea() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['textarea'].concat(args));
+  return h.apply(null, ['textarea'].concat(args));
 }
 
 function tfoot() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['tfoot'].concat(args));
+  return h.apply(null, ['tfoot'].concat(args));
 }
 
 function th() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['th'].concat(args));
+  return h.apply(null, ['th'].concat(args));
 }
 
 function thead() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['thead'].concat(args));
+  return h.apply(null, ['thead'].concat(args));
 }
 
 function title() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['title'].concat(args));
+  return h.apply(null, ['title'].concat(args));
 }
 
 function tr() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['tr'].concat(args));
+  return h.apply(null, ['tr'].concat(args));
 }
 
 function track() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['track'].concat(args));
+  return h.apply(null, ['track'].concat(args));
 }
 
 function u() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['u'].concat(args));
+  return h.apply(null, ['u'].concat(args));
 }
 
 function ul() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['ul'].concat(args));
+  return h.apply(null, ['ul'].concat(args));
 }
 
 function video() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['video'].concat(args));
+  return h.apply(null, ['video'].concat(args));
 }
 
 function wbr() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['wbr'].concat(args));
+  return h.apply(null, ['wbr'].concat(args));
 }
 
 function comment() {
   var args = Array.prototype.slice.call(arguments);
-  return h.apply(this, ['!--'].concat(args));
+  return h.apply(null, ['!--'].concat(args));
 }
 
 // -- end tag shortcuts

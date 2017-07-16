@@ -83,4 +83,4 @@ test('Tags Tests', function (assert) {
     assert.deepEqual(testCase.result, testCase.expect1, testCase.title);
     assert.deepEqual(StringML.stringML(testCase.result), testCase.expect2, testCase.title + ', rendered');
   });
-})
+});
