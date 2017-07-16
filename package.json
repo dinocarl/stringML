@@ -1,6 +1,6 @@
 {
   "name": "stringML",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "An HTML templating library that turn Javascript functions into HTML strings",
   "main": "index.js",
   "scripts": {
