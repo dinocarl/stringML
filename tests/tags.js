@@ -7,6 +7,12 @@ var h1 = StringML.h1;
 var span = StringML.span;
 var ol = StringML.ol;
 var li = StringML.li;
+var p = StringML.p;
+
+var coll = ['item 1', 'item 2', 'item 3'];
+var itemList = coll.map(function(item) {
+  return li(item);
+});
 
 var closedTagNames = Object.keys(StringML)
   .filter(function (item) {
@@ -30,9 +36,9 @@ var testData = [].concat(
   StringML.selfClosingTagNames.map(function (tag) {
     return {
       title: 'Simple test for ' + tag,
-      result: StringML[tag]({id: 'someID', class: 'some-class'}),
-      expect1: [tag, {id: 'someID', class: 'some-class'}, '', []],
-      expect2: '<' + tag + ' id="someID" class="some-class">'
+      result: StringML[tag]({id: 'someID', class: 'some-class', 'data-key': 'value'}),
+      expect1: [tag, {id: 'someID', class: 'some-class', 'data-key': 'value'}, '', []],
+      expect2: '<' + tag + ' id="someID" class="some-class" data-key="value">'
     };
   }),
   {
@@ -73,6 +79,27 @@ var testData = [].concat(
       ),
     expect1: ['ol', {}, '', [['li', {}, 'item 1', []], ['li', {}, 'item 2', []], ['li', {}, 'item 3', []]]],
     expect2: '<ol><li>item 1</li><li>item 2</li><li>item 3</li></ol>'
+  },
+  {
+    title: 'Nested collection',
+    result:
+      ol.apply(null, itemList),
+    expect1: ['ol', {}, '', [['li', {}, 'item 1', []], ['li', {}, 'item 2', []], ['li', {}, 'item 3', []]]],
+    expect2: '<ol><li>item 1</li><li>item 2</li><li>item 3</li></ol>'
+  },
+  {
+    title: 'Only the first string argument gets used',
+    result:
+      p('hi', 'there', 'and there', 'and also there'),
+    expect1: ['p', {}, 'hi', []],
+    expect2: '<p>hi</p>'
+  },
+  {
+    title: 'Only the first object argument gets used',
+    result:
+      p({id: 'present'}, {class: 'absent'}, {'data-key': 'value'}),
+    expect1: ['p', {id: 'present'}, '', []],
+    expect2: '<p id="present"></p>'
   }
 );
 
