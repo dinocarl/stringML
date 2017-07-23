@@ -109,13 +109,13 @@ const pageHTML = [
   orderedItemList
 ];
 
-const rendered = html.map((node) => stringML(node)).join('\n');
+const rendered = pageHTML.map((node) => stringML(node)).join('\n');
 ```
 
 becomes
 
 ```html
-    <header id="pageHeader" class="hero xs-span12"><h1><span class="special-font-adapter">Page Header Text</span></h1></header>
-    <article><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p>Nullam hendrerit sapien non placerat eleifend.</p><p class="last">Nulla ullamcorper viverra eros, sit amet pharetra libero commodo vitae.</p><!-- Weird that I'd need a comment in my HTML output, but, hey, here we are. --></article>
-    <ol><li>item 1</li><li>item 2</li><li>item 3</li></ol>
+<header id="pageHeader" class="hero xs-span12"><h1><span class="special-font-adapter">Page Header Text</span></h1></header>
+<article><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p>Nullam hendrerit sapien non placerat eleifend.</p><p class="last">Nulla ullamcorper viverra eros, sit amet pharetra libero commodo vitae.</p><!-- Weird that I'd need a comment in my HTML output, but, hey, here we are. --></article>
+<ol><li>item 1</li><li>item 2</li><li>item 3</li></ol>
 ```
