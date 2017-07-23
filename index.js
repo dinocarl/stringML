@@ -596,37 +596,32 @@ function attrsFromObject(obj) {
   );
 }
 
-// uses array as a tuple expecting the following structure
-// ['tagName', {tag: 'attributes'}, 'textNode', ['children']]
-// to output an HTML string
-function stringML(arr) {
-  var openingTag = tagFromText(
+function opener(tagName, attrs, commentStatus) {
+  return commentStatus ? '<!-- ' : tagFromText(
     [
-      arr[0],
-      attrsFromObject(arr[1])
+      tagName,
+      attrsFromObject(attrs)
     ]
     .join(' ')
     .trim()
   );
-  var textNode = closingTag = '';
-  var children = [];
-  if (isComment(arr[0])) {
-    openingTag = '<!-- ';
-    textNode = arr[2];
-    closingTag = ' -->';
-  }
-  else if (!isSelfClosing(arr[0])) {
-    textNode = arr[2];
-    children = arr[3].map(function (item) {
-      return stringML(item);
-    });
-    closingTag = tagFromText(arr[0], 'close');
-  }
+}
+
+function closer(tagName, commentStatus, selfClosing) {
+  return commentStatus ? ' -->' : selfClosing ? '' : tagFromText(tagName, 'close');
+}
+
+// uses array as a tuple expecting the following structure
+// ['tagName', {tag: 'attributes'}, 'textNode', ['children']]
+// to output an HTML string
+function stringML(arr) {
   return [
-    openingTag,
-    textNode,
-    children.join(''),
-    closingTag,
+    opener(arr[0], arr[1], isComment(arr[0])),
+    arr[2],
+    arr[3].map(function (item) {
+      return stringML(item);
+    }).join(''),
+    closer(arr[0], isComment(arr[0]), isSelfClosing(arr[0])),
   ].join('');
 }
 
