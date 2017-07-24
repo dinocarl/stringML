@@ -596,7 +596,7 @@ function attrsFromObject(obj) {
   );
 }
 
-function opener(tagName, attrs, commentStatus) {
+function opener(commentStatus, tagName, attrs) {
   return commentStatus ? '<!-- ' : tagFromText(
     [
       tagName,
@@ -607,7 +607,7 @@ function opener(tagName, attrs, commentStatus) {
   );
 }
 
-function closer(tagName, commentStatus, selfClosing) {
+function closer(commentStatus, selfClosing, tagName) {
   return commentStatus ? ' -->' : selfClosing ? '' : tagFromText(tagName, 'close');
 }
 
@@ -616,12 +616,12 @@ function closer(tagName, commentStatus, selfClosing) {
 // to output an HTML string
 function stringML(arr) {
   return [
-    opener(arr[0], arr[1], isComment(arr[0])),
+    opener(isComment(arr[0]), arr[0], arr[1]),
     arr[2],
     arr[3].map(function (item) {
       return stringML(item);
     }).join(''),
-    closer(arr[0], isComment(arr[0]), isSelfClosing(arr[0])),
+    closer(isComment(arr[0]), isSelfClosing(arr[0]), arr[0]),
   ].join('');
 }
 
