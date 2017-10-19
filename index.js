@@ -14,9 +14,9 @@ function h(tagName){
   var childrenArr = args.filter(function(item){
     return getType(item) === 'Array';
   });
-  attrs = attrsArr.length > 0 ? attrsArr[0] : {};
-  textNode = textNodeArr.length > 0 ? textNodeArr[0] : '';
-  children = childrenArr.length > 0 ? childrenArr : [];
+  var attrs = attrsArr.length > 0 ? attrsArr[0] : {};
+  var textNode = textNodeArr.length > 0 ? textNodeArr[0] : '';
+  var children = childrenArr.length > 0 ? childrenArr : [];
   return [tagName, attrs, textNode, children];
 }
 
