@@ -1,5 +1,7 @@
 # StringML
 
+[![Build Status](https://travis-ci.org/dinocarl/stringML.svg?branch=master)](https://travis-ci.org/dinocarl/stringML)
+
 StringML is a Javascript templating library that written in vanilla JS and outputs HTML strings. There's really nothing too special going on here: while similar to Mustache, Handlebars, and underscore templates where the output is a string of HTML, the StringML syntax just uses Javascript functions. The functions break down into
 
 * HTML tag functions
