@@ -1,7 +1,7 @@
 {
   "name": "stringML",
   "version": "0.1.8",
-  "description": "An HTML templating library that turn Javascript functions into HTML strings",
+  "description": "An HTML templating library that turn JavaScript functions into HTML strings",
   "main": "index.js",
   "scripts": {
     "test": "node tests/*"
@@ -13,7 +13,7 @@
   "keywords": [
     "HTML",
     "templates",
-    "Javascript",
+    "JavaScript",
     "functions",
     "string",
     "output"
@@ -25,6 +25,6 @@
   },
   "homepage": "https://github.com/dinocarl/stringML",
   "devDependencies": {
-    "tape": "^4.7.0"
+    "tape": "^4.8.0"
   }
 }
