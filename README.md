@@ -27,7 +27,7 @@ import {
   header,
   h1,
   span
-} from 'stringML';
+} from 'stringml';
 
 const pageHeader = 
   header(
@@ -104,7 +104,7 @@ The `stringML` function converts the output of the HTML tag functions into an HT
 import {
   ...,
   stringML
-} from 'stringML';
+} from 'stringml';
 
 const pageHTML = [
   pageHeader,
