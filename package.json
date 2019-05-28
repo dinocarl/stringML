@@ -1,10 +1,11 @@
 {
   "name": "stringml",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An HTML templating library that turn JavaScript functions into HTML strings",
   "main": "index.js",
   "scripts": {
     "test": "node tests/*",
+    "tdd": "node tests/* --watch",
     "coverage": "istanbul cover tape ./tests/* && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "repository": {
@@ -26,8 +27,8 @@
   },
   "homepage": "https://github.com/dinocarl/stringML",
   "devDependencies": {
-    "coveralls": "^3.0.1",
+    "coveralls": "^3.0.3",
     "istanbul": "^0.4.5",
-    "tape": "^4.9.0"
+    "tape": "^4.10.2"
   }
 }

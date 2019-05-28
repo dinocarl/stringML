@@ -3,5 +3,7 @@ node_modules/
 coverage/
 logs
 *.log
+*.swp
+*.vim
 npm-debug.log*
 .npm
